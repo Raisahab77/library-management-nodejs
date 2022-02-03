@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Navigation</title>
+    <style>
+        .navbar {
+            background-color: black;
+            border-radius: 30px;
+
+        }
+
+        .navbar ul {
+            overflow: auto;
+        }
+
+        .navbar li {
+            float: left;
+            list-style: none;
+            margin: 13px 20px;
+
+        }
+
+        .navbar li a {
+            padding: 3px 3px;
+            text-decoration: none;
+            color: white;
+        }
+
+        .navbar li a:hover {
+            color: red
+        }
+
+        .search {
+            float: right;
+            color: white;
+            padding: 12px 75px;
+        }
+
+        .navbar input {
+            border: 2px solid black;
+            border-radius: 14px;
+            padding: 3px 17px;
+            width: 129px;
+        }
+
+        .main {
+            border: 2px solid navy;
+            display: flex;
+            padding: 5px;
+        }
+
+        .left {
+            width: 50%;
+            border: 2px solid red;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .right {
+            width: 50%;
+            border: 2px solid green;
+            align-items: center;
+            justify-content: center;
+            display: flex;
+
+        }
+
+        .btn {
+            width: 40%;
+            /* justify-content: center; */
+            margin-top: 25px;
+            border-radius: 20px;
+        }
+
+        .btn a {
+            text-decoration: none;
+            font-size: large;
+            font-family: 'Times New Roman', Times, serif;
+            color: white;
+
+        }
+
+        form{
+            background-color: gray;
+            border: 2px solid red;
+            width: 60%;
+            display: flex;
+            flex-direction: column;
+            margin: auto;
+            padding: 20px;
+        }
+
+        .form form label {
+            margin-top: 10px;
+            margin-left: 10px;
+
+        }
+
+        #submitBook {
+            /* margin-top: 35px; */
+            width: 40%;
+            margin: 25px auto 5px;
+            font-size: large;
+            color: white;
+            background-color: maroon;
+            cursor: pointer;
+        }
+
+        #addBook {
+            background-color: red;
+        }
+
+        #deleteBook {
+            background-color: navy;
+        }
+
+        #showBook {
+            background-color: hotpink;
+        }
+
+        #updateBook {
+            background-color: seagreen;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact us</a></li>
+                <div class="search">
+                    <input type="text" name="search" id="search" placeholder="Search this website">
+                </div>
+            </ul>
+        </nav>
+    </header>
+</body>
+<section class="main">
+    <div class="left">
+        <button class="btn" id="addBook"><a href="/addBook.html">Add Book</a></button>
+        <button class="btn" id="deleteBook"><a href="/deleteBook.html">Delete Book</a></button>
+        <button class="btn" id="showBook"><a href="#">Show Book</a></button>
+        <button class="btn" id="updateBook"><a href="#">Update Book</a></button>
+
+    </div>
+    <div class="right">
+
+    </div>
+
+</section>
+
+</html>
